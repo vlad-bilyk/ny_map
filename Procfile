@@ -1,1 +1,1 @@
-web: gunicorn NY_MAP.wsgi:application --log-file=-
+web: gunicorn wsgi:application --log-file=-
