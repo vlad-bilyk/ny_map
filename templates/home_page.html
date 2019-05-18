@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/vendor/assets/css/style.css">
+<style>
+</style>
+</head>
+<body>
+
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+<div class="bg-image img4"></div>
+<!--<div class="bg-image img5"></div>-->
+<!--<div class="bg-image img6"></div>-->
+
+<!--<img src="/vendor/assets/images/down.png" id="arr1">-->
+<!--<img src="/vendor/assets/images/down.png" id="arr2">-->
+<img src="/vendor/assets/images/scroll.png" id="scroll">
+
+
+<div class="bg-text">New York Map</div>
+<div id="chooser">
+	<form action="/uptodatemap" method="post" id="dots">
+		Choose a day:
+		<input name="day" type="radio" value="MON">MON
+		<input name="day" type="radio" value="TUE">TUE
+		<input name="day" type="radio" value="WED">WED
+		<input name="day" type="radio" value="THU">THU
+		<input name="day" type="radio" value="FRI">FRI
+		<input name="day" type="radio" value="SAT">SAT
+		<input name="day" type="radio" value="SUN">SUN
+<!--</form>-->
+<!--<form action = "/uptodatemap" method="post">-->
+	<input class="btn" type="submit" value="Generate map with up-to-date data" id="button_uptodate"></input>
+		 </form>
+</div>
+<!--<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>-->
+<div class="windows8">
+	<div class="wBall" id="wBall_1">
+		<div class="wInnerBall"></div>
+	</div>
+	<div class="wBall" id="wBall_2">
+		<div class="wInnerBall"></div>
+	</div>
+	<div class="wBall" id="wBall_3">
+		<div class="wInnerBall"></div>
+	</div>
+	<div class="wBall" id="wBall_4">
+		<div class="wInnerBall"></div>
+	</div>
+	<div class="wBall" id="wBall_5">
+		<div class="wInnerBall"></div>
+	</div>
+</div>
+
+
+<form action="/generatedmap" method="post">
+<button class="btn_2" id="last_b">Generate map with last refreshed data</button>
+     </form>
+
+<script src="/vendor/assets/js/main.js"></script>
+
+</body>
+</html>
